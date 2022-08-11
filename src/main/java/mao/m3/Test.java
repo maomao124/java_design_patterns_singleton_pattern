@@ -16,8 +16,10 @@ package mao.m3;
 
 public class Test
 {
-    public static void main(String[] args)
+    public static void main(String[] args) throws ClassNotFoundException, InterruptedException
     {
+        Class.forName("mao.m3.Singleton");
+        Thread.sleep(1000);
         System.out.println(Singleton.getInstance().str);
         System.out.println(Singleton.getInstance().show());
         //打印的内存地址都一样，单例

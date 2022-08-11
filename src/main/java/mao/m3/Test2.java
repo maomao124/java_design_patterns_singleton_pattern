@@ -20,7 +20,7 @@ public class Test2
         Thread[] threads = new Thread[100];
         for (int i = 0; i < 100; i++)
         {
-            //可简写为：new Thread(Singleton::getInstance).start();
+            //可简写为：new Thread(Singleton::getInstance);
             threads[i] = new Thread(new Runnable()
             {
                 @Override

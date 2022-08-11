@@ -27,7 +27,7 @@ public class Singleton
      */
     private Singleton()
     {
-        System.out.println("类加载完成");
+        System.out.println("实例私有化构造方法");
     }
 
     private static Singleton instance;
